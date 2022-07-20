@@ -1,0 +1,142 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Lucida Bright,sans-serif;
+	font-size: 16px;
+	background: white;
+}
+
+.contenedor{
+	width: 90%;
+	margin: 20px auto;
+	overflow: hidden; /*para colocar elementos en linea*/
+}
+
+header{
+	background: white;
+}
+
+header nav{
+	width: 90%;
+}
+
+header nav ul{
+	width: 100%;
+	overflow: hidden;
+	list-style: none;
+}
+
+header nav ul li{
+	float: left;
+}
+
+header nav ul li a{
+	text-decoration: none;
+	display: inline-block;
+	padding: 15px 20px;
+	color: black;
+}
+
+header nav ul li a:hover{
+	background: #101F73;
+	color: white;
+}
+
+.main{
+	width: 70%;
+	background: #F2F2F2;
+	float: left;
+}
+
+.main .imagen img{
+	width: 100%;
+	vertical-align: top;
+	float: left;
+}
+
+.main .href{
+	padding: 40px;
+}
+
+.main .href article h2{
+	margin-bottom: 20px;
+	color: #BF213E;
+}
+
+.main .href article p{
+	margin-bottom: 15px;
+	line-height: 27px;
+	color: #32378C;
+}
+
+aside{
+	width: 30%;
+	padding: 20px;
+	color: #32378C;
+	background: #F2F2F2;
+	float: left;
+}
+
+aside .lateral{
+	margin-bottom: 20px;
+}
+
+aside .lateral .titulo{
+	color: #BF213E;
+	border-bottom: 1px solid #BF213E;
+	margin-bottom: 10px;
+}
+
+aside .lateral ul{
+	list-style: none;
+}
+
+aside .lateral ul li{
+	border-bottom: 1px solid #BF213E;
+}
+
+aside .lateral ul li a{
+	color: #32378C;
+	text-decoration: none;
+}
+
+aside .lateral ul li a:hover{
+	color: gray;
+}
+
+aside .lateral p{
+	line-height: 27px;
+}
+
+footer{
+	width: 70%;
+	background: #F2F2F2;
+	color: #BF213E;
+	padding: 15px 0;
+	text-align: center;
+}
+
+/* USO DE MEDIAQUERIES */
+@media screen and (max-width: 600px){
+	.main{
+		width: 100%;
+		font-size: 12px;
+		background-color: black;
+	}
+	aside{
+		width: 100%;
+	}
+	footer{
+		width: 100%;
+	}
+}
+@media screen and (min-width: 800px){
+	body{
+		background-color: darkorange;
+	}
+
+}
